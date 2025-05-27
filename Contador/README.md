@@ -1,23 +1,29 @@
-Descrição do Aplicativo – Controle de Acesso com Contador
+# Contador — Aplicativo Flutter para Controle de Acesso com Contador de Pessoas
 
-Este aplicativo Flutter simula um sistema de controle de entrada e saída de pessoas em um ambiente, como uma sala ou evento, com capacidade máxima de 20 pessoas. A interface é visualmente atrativa, utilizando uma imagem de fundo e botões estilizados.
+Bem-vindo ao **Contador**, um app Flutter simples e elegante que simula o controle de entrada e saída de pessoas em um ambiente limitado, como uma sala, evento ou espaço comercial.
 
-Funcionalidades principais:
-Contador dinâmico: Exibe em tempo real a quantidade atual de pessoas presentes no ambiente.
+## 🚪 Funcionalidades Principais
 
-Limites de capacidade: O app bloqueia o botão de entrada ao atingir a capacidade máxima (20 pessoas) e o botão de saída quando não há ninguém no local (0 pessoas).
+- **Contador Dinâmico:** Acompanhe em tempo real quantas pessoas estão presentes no ambiente, com atualização instantânea na tela.
+- **Limite de Capacidade:** O sistema impede que o número ultrapasse **20 pessoas** — quando o limite é alcançado, o botão de entrada é desativado. Da mesma forma, não permite valores negativos, bloqueando o botão de saída quando não há ninguém.
+- **Mensagens Contextuais:** O status do local muda conforme o fluxo de pessoas, mostrando mensagens intuitivas como:
+  - 🔵 *Vazio* (0 pessoas)
+  - 🟢 *Pode entrar* (1 a 19 pessoas)
+  - 🔴 *Lotado* (20 pessoas)
+- **Interface Interativa:** Botões estilizados e responsivos permitem incrementar ou decrementar a contagem, com feedback visual claro e agradável.
+- **Design Atraente:** Imagem de fundo personalizada, botões arredondados e paleta de cores pensada para destacar o status atual do ambiente.
 
-Mensagens contextuais: O status do ambiente é exibido com mensagens como "Vazio", "Pode entrar" ou "Lotado", variando conforme o número de pessoas.
+## 🛠 Tecnologias Utilizadas
 
-Interface interativa: Os botões “Entrou” e “Saiu” permitem alterar o número de pessoas, com feedback visual intuitivo.
+- **Flutter & Dart:** Desenvolvimento de interface nativa, moderna e responsiva para múltiplas plataformas.
+- **Widgets Flutter:** Uso de `StatefulWidget`, `TextButton`, `Container` e outros para criar uma UI fluida.
+- **Gestão de Estado com `setState()`:** Atualização simples e eficiente da contagem em tempo real.
+- **Estilização Visual:** Imagens, cores e efeitos para tornar a experiência do usuário intuitiva e agradável.
 
-Tecnologias utilizadas:
-Flutter e Dart: Framework para criação de interfaces modernas e responsivas.
+## 🚀 Para que serve?
 
-Widgets: StatefulWidget, TextButton, Text, Container, entre outros.
+Este app é perfeito para quem está começando a aprender Flutter, servindo como base para projetos de controle de fluxo de pessoas. Também pode ser facilmente expandido para:
 
-Gestão de estado: Implementada com setState() para atualizações em tempo real.
-
-Estilização: Uso de imagens de fundo, botões arredondados e cores para destacar o status atual do ambiente.
-
-Esse app é ideal como base para projetos iniciais que envolvem controle de fluxo de pessoas, podendo ser expandido para incluir persistência de dados, notificações ou integração com sensores físicos em um cenário real.
+- Persistência de dados (local ou na nuvem)
+- Notificações automáticas
+- Integração com sensores físicos para controle real de acesso
